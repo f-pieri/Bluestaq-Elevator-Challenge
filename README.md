@@ -2,7 +2,7 @@
 
 ---
 
-This program simulates an elevator system that takes requests from both outside floor call buttons (Up/Down) and inside call buttons. The core functionality includes:
+This program simulates an elevator system that takes requests from both outside-floor call buttons (Up/Down) and inside-elevator call buttons. The core functionality includes:
 
 - Moving up/down between floors
 - Stopping at requested floors
