@@ -128,4 +128,20 @@ public class ElevatorSimulation {
             return String.format("Floor=%d, Direction=%s, UpPending=%s, DownPending=%s", currentFloor, direction, doorsOpen, upStops, downStops);
         }
     }
+    //testing data
+    public static void main(String[] args) {
+    Elevator elevator = new Elevator(1);
+
+    elevator.call(3, Direction.UP);
+    elevator.selectFloor(5);
+    elevator.selectFloor(7);
+
+    for (int i = 0; i < 10; i++) {
+        elevator.tick();
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException ignored) {}
+    }
 }
+}
+
